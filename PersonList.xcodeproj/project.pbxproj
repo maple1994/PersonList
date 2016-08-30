@@ -15,6 +15,10 @@
 		F547AB121D7034C80000825F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F547AB101D7034C80000825F /* LaunchScreen.storyboard */; };
 		F547AB1D1D7034C90000825F /* PersonListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F547AB1C1D7034C90000825F /* PersonListTests.m */; };
 		F547AB281D7034C90000825F /* PersonListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F547AB271D7034C90000825F /* PersonListUITests.m */; };
+		F547AB371D70356A0000825F /* PersonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F547AB361D70356A0000825F /* PersonTableViewController.m */; };
+		F547AB3A1D7035960000825F /* PersonNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F547AB391D7035960000825F /* PersonNavigationController.m */; };
+		F547AB401D7038210000825F /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = F547AB3D1D7038210000825F /* ChineseString.m */; };
+		F547AB411D7038210000825F /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = F547AB3F1D7038210000825F /* pinyin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		F547AB231D7034C90000825F /* PersonListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F547AB271D7034C90000825F /* PersonListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonListUITests.m; sourceTree = "<group>"; };
 		F547AB291D7034C90000825F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F547AB351D70356A0000825F /* PersonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTableViewController.h; sourceTree = "<group>"; };
+		F547AB361D70356A0000825F /* PersonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTableViewController.m; sourceTree = "<group>"; };
+		F547AB381D7035960000825F /* PersonNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonNavigationController.h; sourceTree = "<group>"; };
+		F547AB391D7035960000825F /* PersonNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonNavigationController.m; sourceTree = "<group>"; };
+		F547AB3C1D7038210000825F /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		F547AB3D1D7038210000825F /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		F547AB3E1D7038210000825F /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		F547AB3F1D7038210000825F /* pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinyin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		F547AB011D7034C80000825F /* PersonList */ = {
 			isa = PBXGroup;
 			children = (
+				F547AB3B1D7038210000825F /* ChineseSorting */,
 				F547AB051D7034C80000825F /* AppDelegate.h */,
 				F547AB061D7034C80000825F /* AppDelegate.m */,
 				F547AB081D7034C80000825F /* ViewController.h */,
@@ -110,6 +123,10 @@
 				F547AB101D7034C80000825F /* LaunchScreen.storyboard */,
 				F547AB131D7034C80000825F /* Info.plist */,
 				F547AB021D7034C80000825F /* Supporting Files */,
+				F547AB351D70356A0000825F /* PersonTableViewController.h */,
+				F547AB361D70356A0000825F /* PersonTableViewController.m */,
+				F547AB381D7035960000825F /* PersonNavigationController.h */,
+				F547AB391D7035960000825F /* PersonNavigationController.m */,
 			);
 			path = PersonList;
 			sourceTree = "<group>";
@@ -138,6 +155,17 @@
 				F547AB291D7034C90000825F /* Info.plist */,
 			);
 			path = PersonListUITests;
+			sourceTree = "<group>";
+		};
+		F547AB3B1D7038210000825F /* ChineseSorting */ = {
+			isa = PBXGroup;
+			children = (
+				F547AB3C1D7038210000825F /* ChineseString.h */,
+				F547AB3D1D7038210000825F /* ChineseString.m */,
+				F547AB3E1D7038210000825F /* pinyin.h */,
+				F547AB3F1D7038210000825F /* pinyin.m */,
+			);
+			path = ChineseSorting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F547AB3A1D7035960000825F /* PersonNavigationController.m in Sources */,
+				F547AB411D7038210000825F /* pinyin.m in Sources */,
+				F547AB371D70356A0000825F /* PersonTableViewController.m in Sources */,
+				F547AB401D7038210000825F /* ChineseString.m in Sources */,
 				F547AB0A1D7034C80000825F /* ViewController.m in Sources */,
 				F547AB071D7034C80000825F /* AppDelegate.m in Sources */,
 				F547AB041D7034C80000825F /* main.m in Sources */,
@@ -416,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maple.PersonList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maple.PersonList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
